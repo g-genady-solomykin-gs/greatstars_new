@@ -1,0 +1,831 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <!-- Title -->
+        <title>GreatStars</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="https://genady-solomykin.github.io/greatstars_new/favicon.ico" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://genady-solomykin.github.io/greatstars_new/assets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans" type="text/css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+    </head>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        body:before {
+            content: url(assets/img/flag1.gif);
+            display: block;
+            position: fixed;
+            top: 52px;
+            left: 0;
+            z-index: 999999;  
+        }
+
+        body::after {
+            content: url(assets/img/in.png);
+            display: block;
+            position: fixed;
+            top: 187px;
+            left: -20px;
+            z-index: 999999;  
+        }
+
+        .wrp-counter {
+            padding: 20px 0;
+        }
+
+        .counter {
+            font-size: 21px;
+            text-align: center;
+            max-width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #03C8A8;
+            color: #FFf;
+        }
+        .subscriber {
+            margin-top: 10px;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          body:before {
+            content: url(assets/img/flag.png) !important;
+            display: block !important;
+            position: fixed !important;
+            top: 120px !important;
+            left: 0 !important;
+            z-index: 999999 !important;
+           
+        }
+        
+        .position-text-header {
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            z-index: 999;
+            font-size: 17px;
+        }
+    }
+        
+    </style>
+    
+    <body>
+        <div id="radiobells_container" class="royte" style="position: fixed; z-index:9999; width: 100%;"><a href="https://www.radiobells.com/" rel="nofollow" id="RP_link">Онлайн радио</a> #radiobells_script_hash</div><link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" /><script type="text/javascript">var rad_backcolor="#fffaf5"; var rad_logo = "white"; var rad_autoplay = false; var rad_width = "responsive"; var rad_width_px = 330;var rad_stations =[['https://emgregion.hostingradio.ru:8064/moscow.europaplus.mp3','Европа плюс','europaplus'],['https://radiorecord.hostingradio.ru/rr_main96.aacp','Радио Рекорд','radiorecord'],['https://nashe1.hostingradio.ru/nashe-256','Наше радио','nashe'],['https://pub0302.101.ru:8443/stream/air/aac/64/100','Авторадио','avtoradio'],['https://pub0201.101.ru/stream/air/aac/64/99','Радио Energy','nrj'],['https://online.kissfm.ua/KissFM_HD','Kiss FM','kissfm'],['http://strm112.1.fm/atr_mobile_mp3','1FM Amsterdam Trance Radio','1fmtrance'],['http://iskatel.hostingradio.ru:8015/iskatel-128.mp3','Радио ИСКАТЕЛЬ','radioiskatel'],['https://listen7.myradio24.com/alexx333','Ностальжи Россия','nostalgie'],['https://listen.megahit.online/megamp128','Радио Мегахит','megahitonline'],['https://vocaltrance.fm/radio/vocalchillout_320','Vocal Chillout Radio','vocalchillout'],['https://c32.radioboss.fm:18309/stream','ISKRA✪FM','iskrafm'],['http://radio-holding.ru:9000/marusya_default','Маруся ФМ','radiomarusyafm'],['https://radiorecord.hostingradio.ru/mdl96.aacp','Медляк FM','medliakfm'],['http://radio.enigmatic.su:8120/radio','Enigmatic Sunshine','enigmaticsunshine'],['https://c10.radioboss.fm/stream/176','Радио Zefirot','radiozefirot'],['http://nashe1.hostingradio.ru/rock-128.mp3','ROCK FM','rockfm'],['https://myradio24.org/103703','ARadio','aradio'],['https://zaycevfm.cdnvideo.ru/ZaycevFM_rnb_256.mp3','Зайцев FM: RNB','zaycevhiphop'],['http://bookradio.hostingradio.ru:8069/fm','Радио Книга','radiokniga'],['https://stream.mixadance.fm/mixadance','MixaDance FM','mixadancefm'],['http://air.synthez.net:8888/192','Radio.Synthez.Net','radiosyntheznet'],['http://cafe.volna.top/Cafe','Radio Cafe','makradiocafe'],['https://stream.mixadance.fm/relax','MixaDance FM Relax','mixadancerelax'],['https://online.lyubimyehity.ru:8005/stream','Радио Любимые хиты','radiolubimiehiti'],['https://pub0302.101.ru:8443/stream/air/aac/64/102','Юмор FM','umor'],['https://myradio24.org/station','Станция 3.0','station30'],['https://radiorecord.hostingradio.ru/tm96.aacp','Record Trancemission','trancemission'],['http://radio.globaltranceinvasion.com:8000/radiobells_gtiradio','GTI Radio','gti'],['https://online.kissfm.ua/KissFM_Deep_HD','Kiss FM: Deep','kissfmdeep'],['https://stream.vyshka24.ru/wowrock','Wow Music: Rock','wowmusicrock'],['https://radiorecord.hostingradio.ru/mf96.aacp','Record: Маятник Фуко','recordmf'],['http://retro.volna.top/Retro','Ретро Хит','retrohit'],['https://nashe1.hostingradio.ru:18000/nashe20-128.mp3','Наше Радио 2.0','nashe20'],['http://prgradio.out.airtime.pro:8000/prgradio_a','PRG Radio','prgradio'],['http://stream.hoster.by:8081/pilotfm/pilot/icecast.audio','Пилот FM Минск','pilotfmminsk'],['https://listen6.myradio24.com/95364','Отличное Радио: Русское','otlichnoeradiorus'],['http://setmedia.ru:8000/high','Золотой век','zolotoyvek'],['https://pub0102.101.ru:8443/stream/pro/aac/64/33','Россия 90-ых','russia90x'],['https://radiorecord.hostingradio.ru/russiangold96.aacp','Record Russian Gold','recordrussiangold'],['http://s02.radio-tochka.com:4130/radio','Обычное Радио','obychnoeradio'],['http://stream.melonradio.com/soulful','Melon Radio Soulful','melonsoulful'],['http://stream.melonradio.com/deep','Melon Radio Deep','melondeep'],['https://s.aplus.fm/aplus_rock_128','Радио Аплюс Рок','aplusrock'],['http://stream.melonradio.com/lounge','Melon Radio Lounge','melonlounge'],['http://retro80.hostingradio.ru:8025/retro80-128.mp3',' Ретро FM: 80-е','retrofm80'],['https://uk2.streamingpulse.com/ssl/vcr1','Venice Classic Radio','veniceclassicradio'],['http://setmedia.ru:8000/high5','Подмосковные Вечера','pov'],['https://radiorecord.hostingradio.ru/synth96.aacp','Record Synthwave','recordsynthwave'],['http://radio.rudeep.ru:8020/;','Russian Deep Radio','rudeep'],['http://195.242.218.59:8000/rt','Русский город','radiorussiantown'],['https://live.xo.fm/xofm128','XO FM','xofm'],['http://195.91.237.50:8000/detskoe128','Старое Детское Радио','staroeradiokids'],['http://212.116.112.147:8000/full_stream256.mp3','Imagine Radio','imagineradio'],['https://relay.radiotoolkit.com/spdeep','SOUNDPARK DEEP','soundparkdeep'],['http://europaplus.hostingradio.ru:8014/radiosept320.mp3','Радио 7','radio7'],['http://188.17.157.29:8000/radiobells256','URALSOUND FM | DEEP','uralsound'],['https://radiorecord.hostingradio.ru/rus96.aacp','Record Russian Mix','russianmix'],['https://relay.radiotoolkit.com/svoefm','СВОЕFM | DEEP RADIO','svoefm'],['https://relay.radiotoolkit.com/luxmusic','LUXURY MUSIC','luxurymusic'],['https://radiorecord.hostingradio.ru/rock96.aacp','Record Rock','recordrock'],['https://vocaltrance.fm/radio/deep_320','Deep Vocal House Radio','deepvocalhouse'],['http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps','Радио Маяк','mayak'],['https://maximum.hostingradio.ru/maximum96.aacp','Радио Максимум','maximum'],['https://radiorecord.hostingradio.ru/trancehits96.aacp','Record Trance Hits','recordtrancehits'],['https://radiorecord.hostingradio.ru/rmx96.aacp','Record Remix','recordremix'],['https://graalradio.com:8128/club160','Graal Radio Club','graalradio'],['http://listen1.myradio24.com:9000/6262','Спокойное радио','spokoinoe'],['http://nashe1.hostingradio.ru:80/ultra-192.mp3','Радио ULTRA','ultra'],['http://radio.enigmatic.su:8040/radio','Enigmatic Immersion','enigmaticimmersion'],['https://radioamici.ru:8005/stream','Радио Амичи','amici'],['http://radio.urg.com.ua:80/radio-stilnoe','Перец ФМ','perecfm'],['http://stream.cdm-chillout.com:8020/stream-mp3-Chill','Costa Del Mar: Chillout','costadelmarchillout'],['https://listen.orgasma.fm/late','Orgasma Late','orgasmalate'],['https://stream.ndhradio.online:8015/stream','NDH FM','ndhradio'],['https://listen.orgasma.fm/red','Orgasma Red','orgasmared'],['http://195.242.219.208:8200/enigma320','Radio Enigma','radioenigma'],['http://radio.promodj.com/klubb-192','PromoDj Klubb','promodjklubb'],['http://strm112.1.fm/trance_mobile_mp3','1FM Absolute Euro Trance','1fmeurotrance'],['http://92.100.156.109:8010','Ночное такси','ntaxi'],['http://radio.enigmatic.su:4020/stream','SolarFlow Radio | Chill Waves','solarflowradio'],['https://pub0302.101.ru:8443/stream/trust/mp3/128/264','Relax FM: Jazz','relaxfmjazz'],['http://194.87.111.252:8000/live','Nu Euphoria Trance Radio','nueuphoria'],['http://195.242.219.208:8300/bass320','Auto Bass Fm','autobassfm'],['http://mgps.fmstream.ru:8010/megapolis-48.aac',' Мегаполис FM','megapolis'],['https://listen.orgasma.fm/urban','Orgasma Urban','orgasmaurban'],['http://stream.vegaradio.ru:8000/;','Vega Radio','vegaradio'],['http://rb-stream.de:8000/rrb_128.mp3','Радио Русский Берлин','russkiyberlin'],['https://online.kissfm.ua/KissFM_Black_HD','Kiss FM: Black','kissfmblack'],['http://sectorradio.com/progressive-mp3','Sector Progressive','sectorradioprogressive'],['http://dodofm.ru:8000/radio','Dodo Fm','dodofm'],['https://dfm-handsup.hostingradio.ru/handsup96.aacp','DFM Pop Gold','dfmpopgold'],['http://realfm.net:9500/rfr','REAL FM RELAX','realfmrelax'],['http://radio.jingles.ru:8000/rostovradio','Радио Ростова','radiorostova'],['https://radiorecord.hostingradio.ru/bighits96.aacp','Record Big Hits','recordbighits'],['https://myradio24.org/10313','Свой стиль (Рок)','svoistylerock'],['http://onair.radio1922.ru:8000/192.mp3','Радио 19-22','radio1922'],['http://77.234.212.71:8002/live','Радио Мегабайт','mbradio'],['http://icecast.sibinformburo.cdnvideo.ru:8000/dipolfm','Диполь FM','dipolfm'],['https://dfm-remake.hostingradio.ru/remake96.aacp','DFM Remake','dfmremake'],['https://hitfm.hostingradio.ru/hitfm96.aacp','Хит FM','hitfm'],['https://radiorecord.hostingradio.ru/dreampop96.aacp','Record Dream Pop','recorddreampop'],['http://radio.promodj.com/fullmoon-192','PromoDJ Full Moon','promodjfullmoon'],['http://cast.radiopyatnica.com.ua/radiopyatnica','Радио Пятница','radiopyatnica'],['https://stream.gtf.club:8035/stream','ДРУГОЕ РАДИО','drugoeradio'],['https://nebula.radioca.st/live.mp3','Nebula радио','nebula'],['https://listen.myrh.ru/id048724','Радио БАРХАТ','radiobarhat'],['http://streams.radiosarova.ru/radiotransmit','Радио Трансмит Саров','radiotransmit'],['https://zaycevfm.cdnvideo.ru/ZaycevFM_rap_256.mp3','Зайцев FM: Rap','zaycevrap'],['http://serv.coreradio.ru:8000/coreradio','CORE RADIO','coreradio'],['http://213.80.160.102:8000/channel4','Южная Волна','yuznayavolna'],['https://zaycevfm.cdnvideo.ru/ZaycevFM_classic_256.mp3','Зайцев FM: Classic','zaycevfmclassic'],['https://radiorecord.hostingradio.ru/eurodance96.aacp','Record Eurodance','recordeurodance']];</script><script type="text/javascript" src="https://www.radiobells.com/script/v2_1.js" charset="UTF-8"></script>
+        <div class="width=100% height=100% align-left"></div><div class="width=100% height=100% align-left"></div><div class="align-left"></div><div  style="display:none;"><a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#108;&#105;&#110;&#105;&#121;&#97;&#111;&#107;&#111;&#110;&#46;&#114;&#117;">&#1086;&#1082;&#1085;&#1072;</a> <!-- div --><!-- div end --> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#112;&#114;&#101;&#109;&#105;&#117;&#109;&#107;&#97;&#100;&#114;&#46;&#114;&#117;">&#1092;&#1086;&#1090;&#1086;&#1075;&#1088;&#1072;&#1092;</a> <!-- div --><!-- div end --> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#117;&#110;&#105;&#115;&#104;&#97;&#98;&#108;&#111;&#110;.&#99;&#111;&#109;">html php</a> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#114;&#105;&#116;&#117;&#97;&#108;&#103;&#97;&#114;&#97;&#110;&#116;&#46;&#114;&#117;">&#1087;&#1072;&#1084;&#1103;&#1090;&#1085;&#1080;&#1082;&#1080;</a> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#116;&#117;&#116;&#108;&#111;&#118;&#101;&#46;&#114;&#117;">&#1079;&#1085;&#1072;&#1082;&#1086;&#1084;&#1089;&#1090;&#1074;&#1072;</a></div><div class="padding valign-image-left"></div><div class="padding  valign-image-right"></div><div class="padding valign-image-center"></div><div id="body-bg">
+            <ul class="social-icons pull-right hidden-xs">
+                <li class="social-rss">
+                    <a href="index.html#" target="_blank" title="RSS"></a>
+                </li>
+                <li class="social-twitter">
+                    <a href="index.html#" target="_blank" title="Twitter"></a>
+                </li>
+                <li class="social-facebook">
+                    <a href="index.html#" target="_blank" title="Facebook"></a>
+                </li>
+                <li class="social-googleplus">
+                    <a href="index.html#" target="_blank" title="GooglePlus"></a>
+                </li>
+            </ul>
+            <div class="position-text-header">
+                Историческая, Всегалактическая государственно- частная контора
+            </div>
+            <div id="pre-header" class="container" style="height:340px">
+            </div>
+            <div id="header" style="line-height: 60px!important;">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="index.html" title="">
+                                <!-- <img src="assets/img/logo.png" alt="Logo" /> -->
+                                <span style="font-size: 45px; color: #fff;">GreatStars</span>
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Menu -->
+            <div id="hornav" class="container no-padding">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        <div class="text-center visible-lg">
+                            
+                            <ul id="hornavmenu" class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html" class="fa-home">Главная</a>
+                                </li>
+                                <li>
+                                    <span class="fa-gears">Функции</span>
+                                    <ul>
+                                        <li class="parent">
+                                            <span>Типография</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="features-typo-basic.html">Базовая типография</a>
+                                                </li>
+                                                <li>
+                                                    <a href="features-typo-blockquotes.html">Цитаты</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="parent">
+                                            <span>Составные части</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="features-labels.html">Этикетки</a>
+                                                </li>
+                                                <li>
+                                                    <a href="features-progress-bars.html">Индикаторы прогресса</a>
+                                                </li>
+                                                <li>
+                                                    <a href="features-panels.html">Панели</a>
+                                                </li>
+                                                <li>
+                                                    <a href="features-pagination.html">Пагинация</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="parent">
+                                            <span>Иконки</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="features-icons.html">Иконки общие</a>
+                                                </li>
+                                                <li>
+                                                    <a href="features-icons-social.html">Социальные иконки</a>
+                                                </li>
+                                                <li>
+                                                    <a href="features-icons-font-awesome.html">Font Awesome</a>
+                                                </li>
+                                                <li>
+                                                    <a href="features-icons-glyphicons.html">Глификоны</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="features-testimonials.html">Отзывы</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-accordions-tabs.html">Аккордеоны и табы</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-buttons.html">Кнопки</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-carousels.html">Карусели</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-grid.html">Сетка</a>
+                                        </li>
+                                        <li>
+                                            <a href="features-animate-on-scroll.html">Анимировать при прокрутке</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="fa-copy">Статьи</span>
+                                    <ul>
+                                        <li>
+                                            <a href="pages-about-us.html">Он</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-services.html">Услуги</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-faq.html">Часто задаваемые вопросы</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-about-me.html">Обо мне </a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-full-width.html">Полная ширина</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-left-sidebar.html">Лева боковая панель</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-right-sidebar.html">Права боковая панель</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-login.html">Авторезироваться</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-sign-up.html">Зарегистрироваться</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-404.html">Страница ошибки 404</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="fa-th">Новости</span>
+                                    <ul>
+                                        <li>
+                                            <a href="portfolio-2-column.html">Новости других цивилизаций</a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-3-column.html">Новость 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-4-column.html">Новости от инопланентных расс</a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio-6-column.html">Новость 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="fa-th">Услуга телевидение</span>
+                                    <ul>
+                                        <li>
+                                            <a href="http://tv.ontivi.net/">Телевидение</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="fa-font">Блог</span>
+                                    <ul>
+                                        <li>
+                                            <a href="blog-list.html">Блог</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-single.html">ОТзывы о нас</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="fa-comment">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Menu -->
+            <div id="post_header" class="container" style="height:340px">
+            </div>
+            <div id="content-top-border" class="container">
+            </div>
+            <!-- === END HEADER === -->
+            <!-- === BEGIN CONTENT === -->
+            <div id="content">
+                <div class="container no-padding">
+                    <div class="row">
+                        <!-- <video class="vidTest" width="100%" height="650px" src="assets/video/video_merger.mp4" controls></video> -->
+                        <iframe width="100%" height="650px" src="https://www.youtube.com/embed/KiFv8IzUmFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- Carousel Slideshow -->
+                        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                            <!-- Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example" data-slide-to="1"></li>
+                                <li data-target="#carousel-example" data-slide-to="2"></li>
+                            </ol>
+                            <div class="clearfix"></div>
+                            <!-- End Carousel Indicators -->
+                            <!-- Carousel Images -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="assets/img/slideshow/slide1.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/img/slideshow/slide2.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/img/slideshow/slide3.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/img/slideshow/slide4.jpg">
+                                </div>
+                            </div>
+                            <!-- End Carousel Images -->
+                            <!-- Carousel Controls -->
+                            <a class="left carousel-control" href="index.html#carousel-example" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="index.html#carousel-example" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                            <!-- End Carousel Controls -->
+                        </div>
+                        <!-- End Carousel Slideshow -->
+                    </div>
+                </div>
+                <div class="container background-gray-lighter">
+                    <div class="row margin-vert-40">
+                        <div class="col-md-4">
+                            <div class="col-md-4">
+                                <i class="fa-clock-o fa-5x color-primary"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <h2 class="margin-top-5 margin-bottom-0">3,474.5</h2>
+                                <p>Время вода</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-md-4">
+                                <i class="fa-tachometer fa-5x color-primary"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <h2 class="margin-top-5 margin-bottom-0">3,474.5</h2>
+                                <p>А вода это время</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-md-4">
+                                <i class="fa-users fa-5x color-primary"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <h2 class="margin-top-5 margin-bottom-0">3,474.5</h2>
+                                <p>Часы и вода</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container background-white">
+                    <div class="row margin-vert-30">
+                        <!-- Main Text -->
+                        <div class="col-md-12">
+                            <h2 class="text-center">Информация</h2>
+                            <p class="text-center">Личная конфеденциальная информация КТО МЫ ТАКИЕ! Я, Соломыкин Геннадий Геннадьевич, создатель проекта , фирмы "Great Stars" и данного сайта, занимаюсь расшифровкой и передачей Галактической информации через сны, видения, общение со стихиями.</p>
+                            <p class="text-center">Общаюсь с потусторонними мирами,посещаю исторические порталы. Вся полученная информация мною обрабатывается и излагается посредством описаний, зарисовок. Впоследствии будет опубликована картинная галерея по сюжетным зарисовкам из снов, видений и поступающей информации. Одна из главных идей проекта - материализация положительных мыслей, идей для улучшения жизни на Земле и других Галактиках и не только для живых,но и для людей ушедших на тот свет, умерших. Многие идеи проекта уже получили подтверждение о своем реальном существовании, также через сны,видения. В целях правдивости и реалистичности происходящих со мной событий, в своих записях привожу автобиографические сведения,свидетельствующие о становлении и укреплении моего дара и моих способностях. В подобных записях я предоставляю некую расшифровку моего индивидуального дара (как он формировался и окреп).</p>
+                            <strong style="text-align:center; display: block;">
+                                Утвердили проект 100% 25%:участник 25% остаётся в стране в городе участника проекта. Накопители 25%+ к накопителю дополнительные резервы ,дополнение будет расписано 25% gs . Участники проекта с любой страны ! 1 июня
+                            </strong>
+                            <div>
+                                <img src="assets/img/gen.jpg">
+                                <div>Соломыкин Геннадий Геннадьевич</div>
+                            </div>
+                        </div>
+                        <!-- End Main Text -->
+                    </div>
+                </div>
+                <div class="container background-gray-lighter">
+                    <div class="row padding-vert-20">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-10">
+                            <!-- Portfolio -->
+                            <ul class="portfolio-group">
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInLeft">
+                                            <img alt="image1" src="assets/img/frontpage/image1.jpeg">
+                                            <figcaption>
+                                                <h3>Бесполый человек</h3>
+                                                <span>Я нахожусь в очень большом помещении.Огромная лестница.Человек бесполый в черном одеянии,что то вроде плаща. </span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInLeft">
+                                            <img alt="image1" src="assets/img/frontpage/image1.jpg">
+                                            <figcaption>
+                                                <h3>Сон на яву</h3>
+                                                <span>Вижу очень много людей в черных одеждах, вроде как мусульманские похороны ( но точно не могу быть уверена) человека высокопоставленного. Очень большая толпа людей, все в длинных черных одеждах, плащи до пола, смотрят вниз, вроде не имеют разрешение смотреть вверх.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInRight">
+                                            <img alt="image2" src="assets/img/frontpage/image2.jpg">
+                                            <figcaption>
+                                                <h3>Знакомство</h3>
+                                                <span>В детстве искал с кем бы познакомиться.Однажды приметил в одном из ларьков мороженого девочку немного младше меня.Но как познакомиться?Надо выбрать момент.Вроде все к этому шло,мама ее ушла ,но видно не судьба. В детстве я рос спокойным ребенком .</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInLeft">
+                                            <img alt="image3" src="assets/img/frontpage/image3.jpg">
+                                            <figcaption>
+                                                <h3>Детство и школа</h3>
+                                                <span>Меня не пускали в школус 1 класса.Приходил чистенький без опозданий,но не успевал посидеть на уроках,как меня выгоняли за дверь.Учитея на футбольном поле.слонялся по школе и улице.Учильница забирала мой дневник,тетради и выгоняла.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInRight">
+                                            <img alt="image4" src="assets/img/frontpage/image4.jpg">
+                                            <figcaption>
+                                                <h3>Сны и сновидения</h3>
+                                                <span>Я видела сон,который был настолько явным,что кажется реальностью.Ко мне приходили люди,как они называют себя из высшей цивилизации.Одеты они были в серебряные одежды.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInLeft">
+                                            <img alt="image5" src="assets/img/frontpage/image5.jpg">
+                                            <figcaption>
+                                                <h3>Приятная встреча</h3>
+                                                <span>Встреча с инопланетным разумом номер два.Все те же люди высшей рассы в серебряных костюмах.Очень похожи друг на друга.Общее описание: высокие( выше 2 х метров) ,блондины,глаза голубые,худощавое телосложение,черты лиц правильные.Фигуры и лица идеальные без изъяна.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInRight">
+                                            <img alt="image6" src="assets/img/frontpage/image6.jpg">
+                                            <figcaption>
+                                                <h3>Great Stars экспорт</h3>
+                                                <span>Предусмотренно проектом Great Stars экспорт от 2012 года. Экспорт товаров и отправка мысли в параллельные миры.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInLeft">
+                                            <img alt="image1" src="assets/img/frontpage/image1.jpg">
+                                            <figcaption>
+                                                <h3>Сон о Земле</h3>
+                                                <span>Вижу себя и огромную нашу Планету.Настолько близко и явственно.Я стою напротив и слышу голос грудной женский.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInRight">
+                                            <img alt="image2" src="assets/img/frontpage/image2.jpg">
+                                            <figcaption>
+                                                <h3>Сын</h3>
+                                                <span>Дом, коридор появился ,слева стеклянная перегородка, за перегородкой жена важная, отрывает Сына, смотрит мне в глаза через стекло .Взгляд такой от неё как бы пронзительный, иду далее по коридору.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInLeft">
+                                            <img alt="image3" src="assets/img/frontpage/image3.jpg">
+                                            <figcaption>
+                                                <h3>Золотой человек</h3>
+                                                <span>Очень часто я попадаю в то или другое время,автобусы,техника,трамваи были и звёзды,также огромнейший космический корабль.Если ваши головы не видно.Это я сам реально видел,действительно техника город также.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInRight">
+                                            <img alt="image4" src="assets/img/frontpage/image4.jpg">
+                                            <figcaption>
+                                                <h3>Сны и сновидения</h3>
+                                                <span>Я видела сон,который был настолько явным,что кажется реальностью.Ко мне приходили люди,как они называют себя из высшей цивилизации.Одеты они были в серебряные одежды.</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInLeft">
+                                            <img alt="image5" src="assets/img/frontpage/image5.jpg">
+                                            <figcaption>
+                                                <h3>Хранилище вечной славы</h3>
+                                                <span>Однажды я посетил через трамвайное депо хранилище , узнал когда уже достиг в подземелии и увидел своими глазами . Появился на территории похожей дпо . Иду вижу трамвай едет ,стал подходить ближе. вижу слева идут по направлению ко мне две женщины. Я иногда вспоминаю. причем в том сюжете электро инструмент в своей защите, которую словестно, мысленно написал. Имеется такое направление температуры, вопрос откуда знал что это понадобится .</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                                <!-- Portfolio Item -->
+                                <li class="portfolio-item col-sm col-xs padding-20">
+                                    <a href="index.html#">
+                                        <figure class="animate fadeInRight">
+                                            <img alt="image6" src="assets/img/frontpage/image6.jpg">
+                                            <figcaption>
+                                                <h3>Экстасссенсы</h3>
+                                                <span>Здравствуйте всем тем кто сейчас читает эти записи. Теперь вы узнаете как я умею писать и насколько образован умственно, с кем общаюсь. О них и другом более интересном вы узнаете если вы изучаете психологию мозга и развитие возможностей мозга и узнаете о вмешательстве разных направленностей из параллельного времени и увиденные жилища..</span>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <!-- //Portfolio Item// -->
+                            </ul>
+                            <!-- End Portfolio -->
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="container background-white">
+                    <div class="row padding-vert-40">
+                        <div class="col-md-12">
+                            <h2 class="animate fadeIn text-center">Понравилось ?</h2>
+                            <p class="animate fadeIn text-center">Можете пройти глубже и узнать подробнее о вселенной на нашем другом сайте.</p>
+                            <p class="animate fadeInUp text-center">
+                                <a href="https://genady-solomykin.github.io/greatstars-usa/articles.html">
+                                    <button class="btn btn-primary btn-lg" type="button">Узнать детальнее</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+            <!-- Подписчики -->
+            <div class="follower">
+                <div class="container" style="padding: 0;">
+                    <div class="follower-wrapper" style="background-color: #fff; color: #000; padding-bottom: 45px;">
+                        <div style="text-align: center; border-bottom: 1px solid #ececec; padding-bottom: 5px;">
+                            <h2>Наши подписчики</h2>
+                            <p style="text-align: center; color: #000;">С нами уже более 20.000 человек, будь тоже с нами!</p>
+                            <div style="text-align: left; padding: 10px 15px; color: #000;">
+                                Здравствуйте уважаемые подписчики и все жители мира  крупнейшей разработки финансово- информационного сайта, имеющего название  ТСОПГ,GreatStars. Основа наших идей: благополучие с развитием и в других не менее важных структурах, другие миры, связь и заинтересованность .
+                                Я, Соломыкин Геннадий Геннадьевич, основатель со своей судьбой .
+                                Сейчас мы разрабатываем проект мирового уровня финансов . 
+                                Для подписчиков, коммерческое приложение. Разместить вашу страничку либо аккаунт офицально оформленный на ваши ФИО.,город проживания. Это для рекламы и общения с жителями других городов и территорий проживания .
+                                Также придусмотрен и финансовый  если желают. Это ваш бизнес и товарооборот и средство связи в дальнейшем. Будем улучшать ,а это видео общения .
+                                Более подробную информацию на электронную почту или Вацап <a href="tel:87088476536">87088476537</a> .Будем очень рады общению и долголетию проживания С.Г.Г GS.
+                            </div>
+                        </div>
+                        <!-- <ul style="list-style-type: none; max-height: 40vh; overflow-y: auto;" class="follower-wrapper__list"></ul>    -->
+                        <div class="wrp-counter">
+                            <div class="counter">
+                                <span>164.158</span>
+                                <div class="subscriber">Подписчик</div>
+                            </div>
+                        </div>
+                        <style>
+                           .pulse {
+                                position: relative; 
+                                text-align: center; 
+                                padding: 20px; 
+                                border-radius: 50%;
+                                background: #3D64FF;
+                                width: 120px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: 25px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #fff;
+                            }
+
+                            .pulse::before {
+                                content: '';
+                                position: absolute;
+                                border: 2px solid #3D64FF;
+                                left: -20px;
+                                opacity: 0;
+                                right: -20px;
+                                top: -20px;
+                                bottom: -20px;
+                                border-radius: 50%;
+                                animation: pulse 2.5s linear infinite;
+                                }
+
+                                @keyframes pulse {
+                                    0% {
+                                        transform: scale(0.5);
+                                        opacity: 0;
+                                    }
+                                    50% {
+                                        opacity: 1;
+                                    }
+                                    100% {
+                                        transform: scale(1.2);
+                                        opacity: 0;
+                                    }
+                                }
+
+                                .pulse::after,
+                                .pulse::before {
+                                content: '';
+                                position: absolute;
+                                border: 2px solid #3D64FF;
+                                left: -20px;
+                                opacity: 0;
+                                right: -20px;
+                                top: -20px;
+                                bottom: -20px;
+                                border-radius: 50%;
+                                animation: pulse 2.5s linear infinite;
+                                }
+
+                                .pulse::after {
+                                animation-delay: 1.25s;
+                                }
+
+                                @keyframes pulse {
+                                0% {
+                                    transform: scale(0.5);
+                                    opacity: 0;
+                                }
+                                50% {
+                                    opacity: 1;
+                                }
+                                100% {
+                                    transform: scale(1.2);
+                                    opacity: 0;
+                                }
+                                }
+                        </style>
+                        <div class="pulse">
+                            <span style="font-size: 21px;">2.619.124</span>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <!-- Подписчики конец -->
+            <!-- === BEGIN FOOTER === -->
+            <div id="content-bottom-border" class="container">
+            </div>
+            <div id="base">
+                <div class="container padding-vert-30 margin-top-60">
+                    <div class="row">
+                        <!-- Contact Details -->
+                        <div class="col-md-4 margin-bottom-20">
+                            <h3 class="margin-bottom-10">Контактная информация</h3>
+                            <p>
+                                <span class="fa-phone">Телефон:</span>+77088476537
+                                <br>
+                                <span class="fa-envelope">Email:</span>
+                                <a href="mailto:info@joomla51.com">web_x90@mail.ru</a>
+                                <br>
+                                <span class="fa-link">Веб Сайт 1:</span> 
+                                <a href="https://genady-solomykin.github.io/greatstars-usa/">Greatstars-usa</a> <br>
+                                <span class="fa-link">Веб Сайт 2:</span>
+                                <a href="https://genady-solomykin.github.io/greatstars-portals/">Greatstars-portals</a> <br>
+                                <span class="fa-link">Веб Сайт 3:</span>
+                                <a href="https://genady-solomykin.github.io/greatstars/">Greatstars</a> <br>
+                                <span class="fa-link">Мой FaceBook:</span>
+                                <a href="https://www.facebook.com/100981131517596/posts/179503440332031/">Интересная информация</a> <br>
+                                <span class="fa-link">Мой FaceBook:</span>
+                                <a href="https://m.facebook.com/story.php?story_fbid=379557480279715&id=100046763989450">Интересная информация</a> <br>
+                                <span class="fa-link">Мой FaceBook:</span>
+                                <a href="https://www.facebook.com/groups/514745622413411/permalink/816115142276456/">Интересная информация</a> <br>
+                                <span class="fa-link">Мой FaceBook:</span>
+                                <a href="https://m.facebook.com/story.php?story_fbid=380539516848178&id=100046763989450">Интересная информация</a> <br>
+                                <span class="fa-link">Мой Twitter:</span>
+                                <a href="https://twitter.com/TopographicMaps?s=08">Интересная информация</a> <br>
+                                <span class="fa-link">Мой FaceBook:</span>
+                                <a href="https://www.facebook.com/100046763989450/posts/382660849969378/">Интересная информация</a> <br>
+                                <span class="fa-link">Мой FaceBook:</span>
+                                <a href="https://www.facebook.com/namila0910/?ti=as">Интересная информация</a> <br>
+                                <span class="fa-link">Мой Twitter:</span>
+                                <a href="https://twitter.com/AlAmcRVJPb0P4DP/status/1445579750462799877?t=Mt9kD2ZwXxdGq-2OvWVf5w&s=19">Интересная информация</a> <br>
+                                <span class="fa-link">Мой Twitter:</span>
+                                <a href="https://twitter.com/AlAmcRVJPb0P4DP/status/1447581636443480068?t=BirPBv8ObFkEeGocz0Vrfw&s=08">Интересная информация</a> <br>
+                                <span class="fa-link">Мой Twitter:</span>
+                                <a href="https://twitter.com/AlAmcRVJPb0P4DP/status/1474658266693222402?t=M2EvbZTkq1NtWZM8iQOP_w&s=08">Интересная информация</a> <br>
+                                <span class="fa-link">Мой Twitter:</span>
+                                <a href="https://twitter.com/AlAmcRVJPb0P4DP/status/1488067288603545601?s=19">Интересная информация</a> <br>
+                                <span class="fa-link">Мой Twitter:</span>
+                                <a style="color: greenyellow;" href="https://twitter.com/AlAmcRVJPb0P4DP/status/1488808763477868546?t=ovPCedveIBiSQWuAM0hZgg&s=08">Интересная информация</a> <br>
+                                <span class="fa-link">Мой Twitter:</span>
+                                <a style="color: greenyellow;" href="https://twitter.com/AlAmcRVJPb0P4DP/status/1490215478190616577?t=LIt-b8riegenAn0RGK-m7g&s=19">Интересная информация</a> <br>
+                            </p>
+                            <p>Сайт написан,
+                                <br>React,
+                                <br>Redux,
+                                <br>Bootstrap</p>
+                                <br>
+                            <a href="https://www.youtube.com/channel/UCtDo-DCREhoIs_lorjJ7NMQ">Прямая трансляция</a>
+                        </div>
+                        
+                        <!-- End Contact Details -->
+                        <!-- Sample Menu -->
+                        <div class="col-md-3 margin-bottom-20">
+                            <h3 class="margin-bottom-10">Образец меню</h3>
+                            <ul class="menu">
+                                <li>
+                                    <a class="fa-tasks" href="index.html#">Место для рекламы</a>
+                                </li>
+                                <li>
+                                    <a class="fa-users" href="index.html#">О чем думаю сейчас</a>
+                                </li>
+                                <li>
+                                    <a class="fa-signal" href="index.html#">Цифровой</a>
+                                </li>
+                                <li>
+                                    <a class="fa-coffee" href="index.html#">В свободное время</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- End Sample Menu -->
+                        <div class="col-md-1"></div>
+                        <!-- Disclaimer -->
+                        <div class="col-md-3 margin-bottom-20 padding-vert-30 text-center">
+                            <h3 class="color-gray margin-bottom-10">Подпишитесь на нашу рассылку новостей</h3>
+                            <p>
+                                Подпишитесь на нашу рассылку, чтобы получать все <br>
+                                последние новости и информацию
+                            </p>
+                            <input type="email">
+                            <br>
+                            <button class="btn btn-primary btn-lg margin-top-20" type="button">Подписаться</button>
+                        </div>
+                        <!-- End Disclaimer -->
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Menu -->
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div id="footermenu" class="col-md-8">
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="index.html#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#" target="_blank">Sample Link</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#" target="_blank">Sample Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="copyright" class="col-md-4">
+                            <p class="pull-right">(c) <script type='text/javascript'>var mdate = new Date();document.write(mdate.getFullYear());</script> Your Copyright Info</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Menu -->
+            <!-- JS -->
+            <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/scripts.js"></script>
+            <!-- Isotope - Portfolio Sorting -->
+            <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+            <!-- Mobile Menu - Slicknav -->
+            <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+            <!-- Animate on Scroll-->
+            <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+            <!-- Sticky Div -->
+            <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+            <!-- Slimbox2-->
+            <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+            <!-- Modernizr -->
+            <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+            <!-- End JS -->
+           
+  <div style="position:absolute;left:-3072px;top:0"><div class="width=100% height=100% align-left"></div><div class="align-left" width="1"></div><a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#108;&#105;&#110;&#105;&#121;&#97;&#111;&#107;&#111;&#110;&#46;&#114;&#117;">&#1086;&#1082;&#1085;&#1072;</a> <!-- div --><!-- div end --> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#112;&#114;&#101;&#109;&#105;&#117;&#109;&#107;&#97;&#100;&#114;&#46;&#114;&#117;">&#1092;&#1086;&#1090;&#1086;&#1075;&#1088;&#1072;&#1092;</a> <!-- div --><!-- div end --> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#117;&#110;&#105;&#115;&#104;&#97;&#98;&#108;&#111;&#110;.&#99;&#111;&#109;">html php</a> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#114;&#105;&#116;&#117;&#97;&#108;&#103;&#97;&#114;&#97;&#110;&#116;&#46;&#114;&#117;">&#1087;&#1072;&#1084;&#1103;&#1090;&#1085;&#1080;&#1082;&#1080;</a> <a href="&#104;&#116;&#116;&#112;&#58;&#47;&#47;&#116;&#117;&#116;&#108;&#111;&#118;&#101;&#46;&#114;&#117;">&#1079;&#1085;&#1072;&#1082;&#1086;&#1084;&#1089;&#1090;&#1074;&#1072;</a></div>  </body>
+</html>
+<!-- === END FOOTER === -->
+
+
